@@ -135,7 +135,7 @@ def convert_time_range_of_video_to_GIF(service_type, video_path):
 
 def handle_client(service_type, file_name, compress_type=None):
     # サーバーと接続
-    tcp_sock, server_address, server_port = connect_server()
+    tcp_sock = connect_server()
 
     SERVICE_TYPE = {
         "compressor": compressor,
